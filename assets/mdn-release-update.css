@@ -1,0 +1,6 @@
+header, .header, .site-header, nav, .navbar { padding-top:10px!important; padding-bottom:10px!important; }
+.logo, .site-logo, .brand-logo, header img, nav img { max-height:56px!important; width:auto!important; }
+.hero, .hero-section, .page-hero, .landing-hero, section:first-of-type { padding-top:38px!important; padding-bottom:38px!important; }
+h1 { line-height:1.08!important; margin-top:0!important; margin-bottom:14px!important; }
+img { max-width:100%; height:auto; }
+.return-home, .return-link { display:inline-block; margin-top:20px; font-weight:700; }

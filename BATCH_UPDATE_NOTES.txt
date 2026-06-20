@@ -1,0 +1,26 @@
+MakeDealNow Recommended Updates Applied
+
+Included:
+- Google Sheets lead capture connected on search-results.html
+- Analytics events preserved:
+  search_performed
+  email_lead_submitted
+  affiliate_link_clicked
+- AI billing-safe fallback message added
+- Vercel API files preserved:
+  api/search.js
+  package.json
+  vercel.json
+- Duplicate / obsolete files removed from this package:
+  vehicles.html.html
+  nested starter folder
+  uploaded ZIP files
+  duplicate Google verification variants
+- Sitemap and robots.txt cleaned up
+
+After upload:
+1. Wait for Vercel deployment to say Ready.
+2. Visit search-results.html?q=test
+3. Submit an email lead.
+4. Confirm a new row appears in Google Sheets.
+5. Check Google Analytics Realtime for search_performed and email_lead_submitted.

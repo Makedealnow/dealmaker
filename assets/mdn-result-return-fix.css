@@ -1,0 +1,35 @@
+/* MakeDealNow result return and search landing fix */
+.return-results,
+.return-home,
+.result-return-link {
+  display: inline-block;
+  margin: 18px 10px 8px 0;
+  font-weight: 700;
+  color: #166534;
+  text-decoration: none;
+}
+
+.return-results:hover,
+.return-home:hover,
+.result-return-link:hover {
+  text-decoration: underline;
+}
+
+.results-return-bar {
+  margin: 18px 0 22px;
+  padding: 14px 16px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+#results,
+.search-results,
+.results,
+.results-section {
+  scroll-margin-top: 90px;
+}
