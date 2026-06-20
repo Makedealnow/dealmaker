@@ -1,257 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QSR1MJE499"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-QSR1MJE499');
-</script>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Search Deals | Dealmaker AI Buying Assistant</title>
-
-<meta name="description" content="Search anything you want to buy or compare and receive buying guidance, sponsored options, and supplier information by email.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Dealmaker">
-
-<link rel="canonical" href="https://makedealnow.com/search-search-results.html#results">
-<link rel="icon" type="image/png" href="favicon.png">
-
-<meta property="og:title" content="Search Deals | Dealmaker">
-<meta property="og:description" content="Search anything you want to buy or compare and receive supplier or purchase information by email.">
-<meta property="og:image" content="https://makedealnow.com/Logo.PNG">
-<meta property="og:url" content="https://makedealnow.com/search-search-results.html#results">
-<meta property="og:type" content="website">
-
-<style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5;color:#333;line-height:1.6;}
-nav{background:#083761;padding:15px;text-align:center;}
-nav a{color:white;text-decoration:none;margin:12px;font-weight:bold;}
-nav a:hover{text-decoration:underline;}
-header{background:linear-gradient(135deg,#0a4d8c,#0d6efd);color:white;text-align:center;padding:18px 20px;}
-.logo{width:220px;max-width:85%;height:auto;margin:0 auto 6px auto;display:block;}
-header h1{font-size:30px;margin:6px 0;line-height:1.1;}
-header p{font-size:16px;max-width:850px;margin:5px auto;}
-section{max-width:1100px;margin:auto;padding:38px 20px;}
-.section-title{text-align:center;color:#0a4d8c;margin-bottom:30px;}
-.cards{display:flex;flex-wrap:wrap;gap:20px;}
-.card{background:white;flex:1;min-width:250px;padding:25px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.1);}
-.card a{color:#0a4d8c;}
-.cta,.button{display:inline-block;margin:10px 8px 0 8px;padding:14px 28px;background:#ff9800;color:white;text-decoration:none;border-radius:8px;font-weight:bold;border:0;cursor:pointer;font-size:16px;}
-.cta:hover,.button:hover{opacity:.9;}
-.search-box{background:white;max-width:850px;margin:14px auto 0 auto;padding:14px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);display:flex;gap:10px;flex-wrap:wrap;}
-.search-box input{flex:1;min-width:260px;padding:16px;border:1px solid #ccc;border-radius:8px;font-size:18px;}
-.search-box button{margin:0;}
-.ai-output{white-space:pre-wrap;font-family:Arial,sans-serif;font-size:16px;background:#ffffff;border-radius:10px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.1);}
-.loading{text-align:center;font-size:18px;color:#0a4d8c;font-weight:bold;}
-.lock-box{background:#fff7e6;border:1px solid #ffd28a;padding:25px;border-radius:10px;margin-top:20px;}
-.lock-box input{width:100%;max-width:420px;padding:14px;margin:8px 0;border:1px solid #ccc;border-radius:8px;font-size:16px;}
-.sponsored{background:#eef6ff;border:1px solid #c9e2ff;}
-footer{background:#222;color:white;text-align:center;padding:30px;}
-footer a{color:white;text-decoration:none;margin:10px;}
-footer a:hover{text-decoration:underline;}
-@media(max-width:700px){
-    nav a{display:inline-block;margin:7px;}
-    header h1{font-size:25px;}
-    .logo{width:190px;}
-    section{padding:30px 15px;}
-}
-</style>
-  <link rel="stylesheet" href="assets/mdn-release-update.css">
-  <link rel="stylesheet" href="assets/mdn-result-return-fix.css">
-  <link rel="stylesheet" href="assets/dealmaker.css">
-  <link rel="stylesheet" href="assets/dealmaker-production.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results | Dealmaker</title>
+  <meta name="description" content="Review Dealmaker search results and choose the best landing page.">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-<div id="results"></div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="search-search-results.html#results">AI Search</a>
-<a href="about.html">About</a>
-<a href="buyers.html">Buyers</a>
-<a href="business-partners.html">Business Partners</a>
-<a href="contact.html">Contact</a>
-<a href="faq.html">FAQ</a>
-<a href="privacy-policy.html">Privacy</a>
-<a href="terms.html">Terms</a>
-</nav>
-
-<header>
-<img src="Logo.PNG" alt="Dealmaker Logo" class="logo">
-<h1>Search Deals</h1>
-<p>Search anything you want to buy or compare. Email is required for supplier and purchase information. Phone is optional.</p>
-
-<form class="search-box" action="search-search-results.html#results" method="get">
-<input id="searchInput" type="text" name="q" placeholder="Search anything..." required>
-<button type="submit" class="button">Search Deals</button>
-</form>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="Logo.PNG" alt="Dealmaker logo"><span>Dealmaker</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="insurance.html">Insurance</a>
+    <a href="mortgages.html">Mortgages</a>
+    <a href="home-services.html">Home Services</a>
+    <a href="business-partners.html">Partners</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<section>
-<h2 class="section-title" id="resultsTitle">Buying Results</h2>
-<div id="aiResults" class="loading">Enter a search above to compare options.</div>
-</section>
-
-<section>
-<div class="card sponsored">
-<h2>Sponsored & Affiliate Offers</h2>
-<p>Relevant affiliate and sponsored links can appear here, such as Amazon, Home Depot, Lowe's, insurance partners, lending partners, or other purchase options related to the customer's search.</p>
-
-<div class="cards">
-<div class="card">
-<h3>Ready Clear Protein Water</h3>
-<p>20g protein, zero sugar, hydration and recovery drink.</p>
-<a href="https://amzn.to/4gmjJrq"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="cta"
-   onclick="gtag('event','affiliate_link_clicked',{partner:'amazon_ready_protein_water'});">
-View Offer
-</a>
-</div>
-
-<div class="card">
-<h3>Featured Partner</h3>
-<p>Explore related supplier opportunities.</p>
-<a href="search-search-results.html#results" class="cta" onclick="gtag('event','affiliate_link_clicked',{partner:'featured_partner'});">View Partner</a>
-</div>
-
-<div class="card">
-<h3>Price Comparison</h3>
-<p>Review additional buying options.</p>
-<a href="search-search-results.html#results" class="cta" onclick="gtag('event','affiliate_link_clicked',{partner:'price_comparison'});">Compare</a>
-</div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="lock-box">
-<h2>Unlock Supplier & Purchase Information</h2>
-<p>Enter your email to receive supplier, purchase, or quote information. Phone is optional.</p>
-
-<form id="leadForm">
-<input type="email" id="email" placeholder="Email address required" required><br>
-<input type="tel" id="phone" placeholder="Phone number optional"><br>
-<button type="submit" class="button">Send Supplier Information</button>
-</form>
-
-<p id="leadMessage" style="display:none;"></p>
-</div>
-</section>
-
+<main>
+<div id="results"></div>
+<section class="results-return-bar"><a class="return-home" href="index.html">← Return to Home</a><a class="return-results" href="index.html">Start a New Search</a></section>
+<section class="section"><h1>Search Results</h1><p>Showing options for: <strong id="queryDisplay">your search</strong></p>
+<div class="grid results-section">
+<div class="result-card"><h3>Vehicles</h3><p>Compare vehicle quote and dealer paths.</p><a class="btn" href="vehicles.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Insurance</h3><p>Compare coverage categories and quote paths.</p><a class="btn" href="insurance.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Mortgages</h3><p>Review home financing and mortgage quote paths.</p><a class="btn" href="mortgages.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Home Services</h3><p>Find home service partner options.</p><a class="btn" href="home-services.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Business Partners</h3><p>Partner with Dealmaker.</p><a class="btn" href="business-partners.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Peptide Therapy</h3><p>Research price, quality, shipping, and trust signals.</p><a class="btn" href="peptide-therapy.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Lowest Price</h3><p>Compare low-price options before deciding.</p><a class="btn" href="lowest-price.html">Open Landing Page</a></div>
+<div class="result-card"><h3>Contact</h3><p>Questions or support.</p><a class="btn" href="contact.html">Open Contact</a></div>
+</div></section></main>
 <footer>
-<p><strong>Dealmaker.com</strong></p>
-<p>AI Buying Assistant • Compare Offers • Save Money</p>
-<p>
-<a href="index.html">Home</a> |
-<a href="search-search-results.html#results">AI Search</a> |
-<a href="about.html">About</a> |
-<a href="buyers.html">Buyers</a> |
-<a href="business-partners.html">Business Partners</a> |
-<a href="contact.html">Contact</a> |
-<a href="faq.html">FAQ</a> |
-<a href="privacy-policy.html">Privacy</a> |
-<a href="terms.html">Terms</a>
-</p>
-<p>© 2026 Dealmaker.com. All Rights Reserved.</p>
+  <p>© Dealmaker. Compare options before you decide.</p>
+  <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="contact.html">Contact</a></p>
 </footer>
-
-<script>
-function cleanQuery(q){
-    return (q || "").trim();
-}
-
-function fallbackResults(query){
-    if(!query){
-        return "Enter a search above to compare options.";
-    }
-    return "Search request received for: " + query + "\\n\\n" +
-           "AI search will be activated after billing is enabled. For now, enter your email below to receive supplier and purchase information when available.\\n\\n" +
-           "General buying tips:\\n" +
-           "1. Compare at least 3 options before buying.\\n" +
-           "2. Review price, warranty, delivery, service quality, and total cost.\\n" +
-           "3. Keep supplier details organized so you can compare offers.";
-}
-
-function runSearch(query){
-    const resultsBox = document.getElementById("aiResults");
-    const title = document.getElementById("resultsTitle");
-
-    if(!query){
-        title.textContent = "Buying Results";
-        resultsBox.className = "loading";
-        resultsBox.textContent = "Enter a search above to compare options.";
-        return;
-    }
-
-    title.textContent = "Results for: " + query;
-    resultsBox.className = "ai-output";
-    resultsBox.textContent = fallbackResults(query);
-
-    gtag('event', 'search_performed', {
-        search_term: query
-    });
-}
-
-const params = new URLSearchParams(window.location.search);
-const query = cleanQuery(params.get("q"));
-
-document.getElementById("searchInput").value = query;
-runSearch(query);
-
-document.getElementById("leadForm").addEventListener("submit", async function(e){
-    e.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const leadMessage = document.getElementById("leadMessage");
-
-    gtag('event', 'email_lead_submitted');
-
-    leadMessage.innerHTML = "Sending your request...";
-    leadMessage.style.display = "block";
-
-    try{
-        await fetch("https://script.google.com/macros/s/AKfycbxMfgwxDR2hHrUQiBeYNdrMzX0zvT0vh6zLhKOGtD9YpJpvGwXzY4r32bl5f-LW2IjHPw/exec", {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                email: email,
-                phone: phone,
-                searchTerm: query,
-                pageURL: window.location.href
-            })
-        });
-
-        leadMessage.innerHTML = "<strong>Thank you.</strong> Your request has been received. Supplier and purchase information will be sent when available.";
-        document.getElementById("leadForm").reset();
-    }catch(error){
-        leadMessage.innerHTML = "<strong>Thank you.</strong> Your request has been received.";
-    }
-});
-</script>
-
-  <script src="assets/mdn-result-return-fix.js"></script>
-
-<div class="results-return-bar">
-  <a class="return-home" href="index.html">← Return to Home</a>
-  <a class="return-results" href="index.html">Start a New Search</a>
-</div>
-
-  <script src="assets/dealmaker.js"></script>
-  <script src="assets/dealmaker-production.js"></script>
+<script src="assets/app.js"></script>
 </body>
 </html>
-

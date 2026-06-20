@@ -1,0 +1,7 @@
+(function(){
+function goToResults(term){var q=term||"";var url="search-results.html#results";if(q.trim())url="search-results.html?q="+encodeURIComponent(q.trim())+"#results";window.location.href=url}
+window.goToResults=goToResults;
+document.addEventListener("submit",function(e){var form=e.target;if(!form.matches("[data-search-form]"))return;e.preventDefault();var input=form.querySelector("input[name='q'], input[type='search'], input[type='text']");goToResults(input?input.value:"")});
+document.addEventListener("click",function(e){var el=e.target.closest("a,button");if(!el)return;var text=(el.textContent||"").toLowerCase().trim();var cls=(el.className||"").toString().toLowerCase();var href=(el.getAttribute("href")||"").toLowerCase();var route=["search deals","search","compare","ai search","view partner","lowest price","get quotes","find deals","start"].some(function(w){var slug=w.replace(/\s+/g,"-");return text.includes(w)||cls.includes(slug)||href.includes(slug)});if(route&&!text.includes("return")&&!text.includes("home")&&!href.includes("mailto:")){e.preventDefault();goToResults(text)}},true);
+window.addEventListener("load",function(){if(/search-results\.html/i.test(location.pathname)){var target=document.getElementById("results")||document.querySelector("main");if(target){setTimeout(function(){target.scrollIntoView({behavior:"instant",block:"start"});window.scrollBy(0,-70)},50)}var params=new URLSearchParams(location.search);var q=params.get("q");var qBox=document.getElementById("queryDisplay");if(qBox&&q)qBox.textContent=q}});
+})();
