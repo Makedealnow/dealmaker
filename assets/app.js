@@ -1,1 +1,31 @@
-(function(){function goToResults(term){var q=term||"";var url="search-results.html#results";if(q.trim())url="search-results.html?q="+encodeURIComponent(q.trim())+"#results";window.location.href=url}window.goToResults=goToResults;document.addEventListener("submit",function(e){var form=e.target;if(!form.matches("[data-search-form]"))return;e.preventDefault();var input=form.querySelector("input[name='q'], input[type='search'], input[type='text']");goToResults(input?input.value:"")});window.addEventListener("load",function(){if(/search-results\.html/i.test(location.pathname)){var target=document.getElementById("results")||document.querySelector("main");if(target){setTimeout(function(){target.scrollIntoView({behavior:"instant",block:"start"});window.scrollBy(0,-70)},50)}var params=new URLSearchParams(location.search);var q=params.get("q");var qBox=document.getElementById("queryDisplay");if(qBox&&q)qBox.textContent=q}});})();
+(function(){
+function goToResults(term){
+  var q=term||"";
+  var url="search-results.html#results";
+  if(q.trim()) url="search-results.html?q="+encodeURIComponent(q.trim())+"#results";
+  window.location.href=url;
+}
+window.goToResults=goToResults;
+document.addEventListener("submit",function(e){
+  var form=e.target;
+  if(!form.matches("[data-search-form]")) return;
+  e.preventDefault();
+  var input=form.querySelector("input[name='q'], input[type='search'], input[type='text']");
+  goToResults(input?input.value:"");
+});
+window.addEventListener("load",function(){
+  if(/search-results\.html/i.test(location.pathname)){
+    var target=document.getElementById("results")||document.querySelector("main");
+    if(target){
+      setTimeout(function(){
+        target.scrollIntoView({behavior:"instant",block:"start"});
+        window.scrollBy(0,-70);
+      },50);
+    }
+    var params=new URLSearchParams(location.search);
+    var q=params.get("q");
+    var qBox=document.getElementById("queryDisplay");
+    if(qBox&&q) qBox.textContent=q;
+  }
+});
+})();
